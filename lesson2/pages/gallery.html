@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин FutureAuto</title>
+</head>
+<body>
+    <div style="background-color: #2b1f5c; border: 5px black; color: white;height: 10vh;margin-bottom: 0;">
+        <ul>
+            <li style="display: inline; margin-right: 100px;">
+                    <a href="./articles.html" style="color: white; font-size: 40px; font-weight: bold;"> Новини </a>
+            </li>
+            <li style="display: inline; margin-right: 100px;">
+                <a href="./gallery.html" style="color: white; font-size: 40px; font-weight: bold;"> Магазин </a>
+            </li>      
+            <li style="display: inline; margin-right: 100px;">
+                <a href="./contacts.html" style="color: white; font-size: 40px; font-weight: bold;"> Контакти </a>
+            </li>  
+            <li style="display: inline; margin-right: 100px;">
+                <a href="./about.html" style="color: white; font-size: 40px; font-weight: bold;"> Про компанію </a>
+            </li>        
+        </ul>
+    </div>
+    <div style="background-color: #5f7be4; min-height: 90vh; margin-top: 0;">
+        <h1 style="text-align: center;color:white;font-size: 60px; text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+        0 3px 0 blue, 0 4px 0 blue,
+        0 5px 0 blue, 0 6px 0 darkblue,
+        0 7px 0 darkblue, 0 8px 0 darkblue,
+        0 20px 30px rgba(0, 0, 0, 0.5);margin-top: 0;">Магазин</h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="#top-sales" style="color: black;">Топ продажів</a> 
+                </li>
+                <li>
+                    <a href="#catalog"  style="color: black;">Каталог</a> 
+                </li>
+                <li>
+                    <a href="#credit"  style="color: black;">Розрахунок кредиту</a> 
+                </li>
+            </ul>
+        </div>
+        <div id="top-sales">
+            <h2>
+                Топ продажів:
+            </h2>
+            <ol>
+                <li>
+                    RENAULT Duster 1011
+                </li>
+                <li>
+                    VOLKSWAGEN ID.4
+                </li>
+                <li>
+                    HONDA M-NV 466
+                </li>
+                <li>
+                    SUZUKI Vitara 413
+                </li>
+                <li>
+                    HYUNDAI Tucson 376
+                </li>
+            </ol>
+        </div>    
+        <div id="catalog">
+            <h2> Каталог </h2>
+            <table style="border: 5px black;">
+                <tr>
+                    <td>
+                        <a href="../images/duster.jpg" target="_blank"> <img src="../images/duster.jpg" alt="RENAULT Duster 1011" width="480"> </a>
+                        <p>
+                            <b>RENAULT Duster 1011</b> 
+                            <button name="product-1"> В корзину </button>
+                        </p>
+                    </td>
+                    <td>
+                        <a href="../images/tucson.jpg" target="_blank"> <img src="../images/tucson.jpg" alt="HYUNDAI Tucson" width="480"> </a>
+                        <p>
+                            <b>HYUNDAI Tucson</b> 
+                            <button name="product-2"> В корзину </button>
+                        </p>
+                    </td>
+                    <td>
+                        <a href="../images/Tesla.jpg" target="_blank"> <img src="../images/Tesla.jpg" alt="Tesla Model Y" width="480"> </a>
+                        <p>
+                            <b>Tesla Model Y</b> 
+                            <button name="product-3"> В корзину </button>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="../images/T-Roc.jpg" target="_blank"> <img src="../images/T-Roc.jpg" alt="Volkswagen T-Roc" width="480"> </a>
+                        <p>
+                            <b>Volkswagen T-Roc</b> 
+                            <button name="product-4"> В корзину </button>
+                        </p>
+                    </td>
+                    <td>
+                        <a href="../images/peugeot.jpg" target="_blank"> <img src="../images/peugeot.jpg" alt="Peugeot 208" width="480"> </a>
+                        <p>
+                            <b>Peugeot 208</b> 
+                            <button name="product-5"> В корзину </button>
+                        </p>
+                    </td>
+                    <td>
+                        <a href="../images/vitara.jpg" target="_blank"> <img src="../images/vitara.jpg" alt="SUZUKI Vitara" width="480"> </a>
+                        <p>
+                            <b>SUZUKI Vitara</b> 
+                            <button name="product-6"> В корзину </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>     
+    </div>
+    <div id="credit" style="background-color: #5f7be4;margin-top: 0;">
+        <h2 style="margin-top: 0;"> Розрахунок кредиту</h2>
+        <form>
+            <p>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name">
+                <label for="phone">Номер телефону:</label>
+                <input type="text" id="phone" name="phone">
+            </p>
+            <p>
+                <label for="price">Вартість авто:</label>
+                <input type="number" id="price" name="price">               
+            </p>
+            <p>
+                <label for="strok">Кількість місяців:</label>
+                <input type="range" id="strok" name="strok" min="1" max="120" value="12" oninput="num.value = this.value">     
+                <output id="num">12</output>        
+            </p>
+            <p>
+                <label for="credit_type">Тип кредиту:</label>
+                <select id="credit_type" name="credit_type">
+                    <option value="1">Класичний</option>
+                    <option value="2">Ануїтет</option>
+                </select>    
+            </p>
+            <p>
+                <input type="submit" value="Відправити запит">
+            </p>
+        </form>
+    </div>
+        
+</body>
+</html>
