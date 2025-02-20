@@ -1,0 +1,30 @@
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.mainheader {
+    text-align: center;
+    color:white;
+    font-size: 60px; 
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+    0 3px 0 blue, 0 4px 0 blue,
+    0 5px 0 blue, 0 6px 0 darkblue,
+    0 7px 0 darkblue, 0 8px 0 darkblue,
+    0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.article-font {
+    font-size: 16px;
+}
+
+.contact-font {
+    font-size: 20px;
+}
+
+.gallery-font {
+    color: black;
+}

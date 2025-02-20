@@ -1,0 +1,20 @@
+.gradient {
+    background-image: radial-gradient( #00004d, darkblue, white); 
+    text-align: center;
+}
+
+.main-picture {
+    border-style: solid;
+    border-width: 10px;
+    border-image: radial-gradient(blue, white) 1;
+}
+
+.back,.page-background {
+    background-color: #5f7be4;
+    margin-top: 0;
+    }
+
+.page-background{
+    min-height: 90vh; 
+    font-size: 24px;
+}
