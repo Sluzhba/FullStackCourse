@@ -1,0 +1,105 @@
+* {
+    background-color: black;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.h-class {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-align: center;
+    color: #ca2238;
+    text-shadow: 5px 5px 0px #dda816, 
+      10px 10px 0px #d2df24, 
+      15px 15px 0px  #1e9c12, 
+      20px 20px 0px #31cbf1, 
+      25px 25px 0px #10109c, 
+      30px 30px 0px #4a0a68;
+}
+
+div p { 
+    color: white;
+    
+}
+
+p[data-name="First"] {
+    color:rosybrown;
+}
+
+p[data-name="First"]::first-letter {
+    color:#ca2238;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p > span[data-name*="span"] {
+    color:#ca2238;
+    font-weight: 900;
+}
+
+.spanclass {
+    color: #c79407;
+    font-weight: 900;
+}
+
+#two {
+    color: rgb(243, 215, 180);
+}
+
+#two::first-letter {
+    color:#8b470f;
+    font-style: italic;
+    text-transform: uppercase;
+}
+span.spanclass ~ span {
+    color: darkkhaki;
+}
+
+div>p>span {
+    color:darkgreen;
+    font-weight: 900;
+}
+
+div {
+    color:aquamarine;
+}
+section {
+    font-style: italic;
+}
+
+section>h2>span {
+    color:cyan;
+    font-weight: 900;
+}
+
+.blue {
+    color: cornflowerblue;
+}
+
+#bspan {
+    color: #10109c;
+    font-weight: 900;
+}
+
+div+br+section {
+    color: blueviolet;
+}
+
+#bspan2[data-name*="violet"] {
+    color: fuchsia;
+    font-weight: 900;
+}
+
+div:hover {
+    text-shadow: 1px 1px 0px white;
+}
+
+h1::after {
+    content: '🌈';
+}
+
+h1::before{
+    content: '🌞';
+}
