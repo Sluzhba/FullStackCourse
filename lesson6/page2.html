@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/table2.css">
+    <title>Таблиця 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Таблиця 2</h1>
+        <table>
+            <tr>
+                <td colspan="2" class="td1">1-2</td>
+                <!-- <td>2</td> -->
+                <td class="td2">3</td>
+            </tr>
+            <tr>
+                <td class="td3">4</td>
+                <td rowspan="2" colspan="2" class="td4">
+                    <h2>Друга таблиця, ДОЧІРНЯ</h2>
+                    <table class="table2">
+                        <tr>
+                            <td class="td6">1</td>
+                            <td rowspan="3" class="td6">2-5-8</td>
+                            <td rowspan="2" class="td5">3-6</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="td5">4-7</td>
+                            <!-- <td>5</td> -->
+                            <!-- <td>6</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>7</td> -->
+                            <!-- <td>8</td> -->
+                            <td class="td6">9</td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- <td>6</td> -->
+            </tr>
+            <tr>
+                <td class="td3">7</td>
+                <!-- <td>8</td> -->
+                <!-- <td>9</td> -->
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
