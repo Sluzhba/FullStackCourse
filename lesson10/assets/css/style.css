@@ -105,7 +105,6 @@ a {
 .navbar__list {
   display: flex;
   flex-wrap: wrap;
-  columns: var(--gap-xl);
   margin-left: -1.875em; /* 25px */
 }
 .navbar__item {
@@ -215,8 +214,8 @@ a {
 }
 
 .process__content {
-  width: var(--container-primary);
-  margin-top: 50px;
+  max-width: var(--container-primary);
+  margin-top: 50px;;
 }
 
 .footer {
@@ -237,4 +236,155 @@ a {
 .footer__copyright {
   font-size: 0.8125rem; /* 13px */
   font-weight: 400;
+}
+
+@media (max-width: 1110px) {
+
+ .process__content {
+    width: calc(100% - 20px);
+  }
+  
+}
+
+@media (max-width: 1032px) {
+  .experience__container {
+    justify-content: center;
+  }
+
+  .experience-item {
+    width:25%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --line-height: 1.2;
+  }
+  .container {
+    width: calc(100% - 80px);
+  }
+  .header {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .navbar {
+    margin-bottom: 80px;
+  }
+
+  .navbar__list {
+    margin-left: -1.5em;
+  }
+
+  .navbar__link {
+    padding: 0.5em 1.5em;
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding-top: 60px;
+  }
+
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .process {
+    padding-bottom: 80px;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .navbar__item{
+    width:30%;
+    line-height: 1em;
+  }
+  .navbar__link {
+    padding: 0.4em 1em;
+  }
+ 
+  .experience-item {
+    gap: var(--gap-sm);
+  }
+
+  .experience-item__number {
+    font-size: 1rem; 
+    font-weight: 500;
+    margin-top: 0.5em;
+    line-height: 1;
+  }
+  .experience-item__label {
+    font-size: 1rem; 
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item {
+    width:40%;
+
+  }
+
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar__list {
+    margin-left: -1em;
+  }
+
+  .navbar__item{
+    width:40%;
+    line-height: 1.5em;
+    font-size: 1rem;
+  }
+  
+
+  .navbar {
+    margin-bottom: 50px;
+  }
+
+  .hero__description {
+    margin-bottom: 40px;
+  }
+
+  .section {
+    padding-top: 40px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .about {
+    padding-bottom: 35px;
+  }
+
+  .experience {
+    padding-top: 1.25em; /* 20px */
+    padding-bottom: 1.25em;
+  }
+  
+  .process {
+    padding-bottom: 50px;
+  }
+
+  .footer__author {
+    font-size: 1rem; 
+    margin-bottom: 8px;
+    margin-left: -40px;
+  }
+  
+  .footer__copyright {
+    font-size: 0.625em;
+    margin-left: -40px;
+  }
 }
