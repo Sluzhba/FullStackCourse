@@ -1,2 +1,7 @@
 /.vscode
 /lesson11/node_modules
+/gulp-training-master
+lesson11/.csscomb.json
+lesson11/gulpfile.js
+lesson11/package-lock.json
+lesson11/package.json
