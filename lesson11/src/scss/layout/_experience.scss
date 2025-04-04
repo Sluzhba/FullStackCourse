@@ -1,11 +1,11 @@
 @use '../abstracts';
-@import '../base/helpers';
+@use '../base/helpers' as *;
 
 .experience {
     @include abstracts.display-flex();
     background-color: abstracts.$color-primary;
     color: abstracts.$color-white;
-    min-height: 250px;
+    min-height: 250px; 
     padding-top: 2.5em; 
     padding-bottom: 2.5em; 
 
